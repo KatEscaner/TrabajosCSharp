@@ -1,2 +1,3 @@
 # TrabajosCSharp
- Trabajos para la asignatura de C# para el profesor
+
+Trabajos para la asignatura de C# de Juan José Fernández
