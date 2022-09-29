@@ -7,26 +7,28 @@ class Piramide{
 		System.Console.WriteLine();
 
 			if(num%2 != 0){
-			for(int i=(num-1); i>0; i--)
+			for(int i=(num-1)/2; i>0; i--)
 				System.Console.Write(" ");
 			
 			System.Console.Write("*");
 			System.Console.WriteLine();
 
-			for(int i=2; i<num-1;i++){
-				for(int j=num; j>i; j--)
+			int count = num-2;
+
+			while(count>0){
+				for(int i=2; i<count; i+=2)
 					System.Console.Write(" ");
 				
-				for(int k=1; k<i; k++)
+				for(int j=num; j>count; j-=2)
 					System.Console.Write("*");
 				
 				System.Console.Write("*");
 				
-				for(int k=1; k<i; k++)
+				for(int k=num; k>count; k-=2)
 					System.Console.Write("*");
 					
 				System.Console.WriteLine();
-				
+				count-=2;
 			}	
 		} else {
 			System.Console.WriteLine("El numero introducido es par, tiene que ser impar");
