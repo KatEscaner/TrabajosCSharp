@@ -19,13 +19,9 @@ class Piramide{
 				for(int i=2; i<count; i+=2)
 					System.Console.Write(" ");
 				
-				for(int j=num; j>count; j-=2)
+				for(int j=num+1; j>count; j--)
 					System.Console.Write("*");
 				
-				System.Console.Write("*");
-				
-				for(int k=num; k>count; k-=2)
-					System.Console.Write("*");
 					
 				System.Console.WriteLine();
 				count-=2;
